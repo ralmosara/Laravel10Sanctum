@@ -5,7 +5,9 @@ namespace App\Exceptions;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
-class Handler extends ExceptionHandler
+use Essa\APIToolKit\Exceptions\Handler as APIHandler;
+
+class Handler extends APIHandler
 {
     /**
      * The list of the inputs that are never flashed to the session on validation exceptions.
